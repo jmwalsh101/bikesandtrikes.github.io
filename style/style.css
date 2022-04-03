@@ -1,6 +1,6 @@
 body{
 	font-size:100%;
-	background-color:black;
+	background-color:#000000;
 }
 
 p{
@@ -11,55 +11,7 @@ h1{
 	color:#8C2329;
 	font-family:Georgia;
 }
-h2{
-	color:blue;
-	font-family:Verdana;
-}
-h3{
-	color:green;
-	font-family:Verdana;
-}
 
-.ListStyleOne {
-  list-style: circle;
-  font-family:Verdana;
-}
-
-.ListStyleTwo {
-  list-style: square;
-  font-family:Verdana;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-.textcenter {
-  text-align: center;
-}
-.shadows {
-  text-shadow: 2px 2px #757876;
-}
-.keywords {
-	color:red;
-	font-weight:bold;
-	text-decoration: underline;
-}
-.menu {
-  position: fixed;
-  left: 0px;
-  width: 150px;
-  border: 3px solid #73AD21;
-  padding: 10px;
-}
 @media(min-width:720px){
  	.header{
       display:flex;
@@ -72,8 +24,25 @@ h3{
 	 }
 }
 
+/* change the title color */
+.navbar-brand{
+	font-size: 14px;
+	font-family:Verdana;
+}
+
+/* change the nav link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #fd7e14;
+}
+
+/* change the color of hovered nav links */
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+/* Carousel in landing section */
 .carousel-item {
-  height: 65vh;
+  height: 50vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
