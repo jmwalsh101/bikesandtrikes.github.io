@@ -6,13 +6,22 @@ body {
 p {
   color: white;
   font-family: Helvetica;
+  text-align: center;
 }
 h1 {
   color: #8c2329;
   font-family: Georgia;
+  text-align: center;
 }
+/*
+@media (min-width: 992px) {
+  .modal-dialog {
+    margin-top: 10%;
+  }
+}
+*/
 
-@media (min-width: 720px) {
+@media (min-width: 992px) {
   .header {
     display: flex;
     flex-direction: center;
@@ -21,6 +30,109 @@ h1 {
   .boxes {
     display: flex;
     justify-content: center;
+  }
+  .modal-dialog {
+    margin-top: 15%;
+  }
+  #last-image {
+    margin: 0;
+    padding: 0;
+  }
+  .modal-body {
+    margin: 0;
+    padding: 0;
+  }
+  .modal-content {
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+  }
+  .boxes {
+    display: flex;
+    justify-content: center;
+  }
+  .modal-dialog {
+    margin-top: 30%;
+  }
+  #last-image {
+    margin: 0;
+    padding: 0;
+  }
+  .modal-body {
+    margin: 0;
+    padding: 0;
+  }
+  .modal-content {
+    padding: 7px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .modal-dialog {
+    margin-top: 50%;
+  }
+  #last-image {
+    margin: 0;
+    padding: 0;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .modal-body {
+    margin: 0;
+    padding: 0;
+  }
+  .modal-content {
+    padding: 5px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+  .modal-dialog {
+    margin-top: 80%;
+  }
+  .container-xs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .gallery-border {
+    max-width: 50%;
+  }
+
+  #last-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-body {
+    margin: 0;
+    padding: 0;
+  }
+  .modal-content {
+    padding: 4px;
+    margin: 0;
+  }
+
+  .gallery {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .modal {
+    max-width: 70%;
+    margin-left: 15%;
   }
 }
 
@@ -65,4 +177,9 @@ img {
 
 #gallery-modal .modal-img {
   width: 100%;
+}
+
+.gallery-border {
+  margin: 0;
+  padding: 2px;
 }
