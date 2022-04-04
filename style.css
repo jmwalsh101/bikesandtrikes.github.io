@@ -142,9 +142,18 @@ h1 {
   font-size: 25px;
   color: rgba(255, 255, 255, 0.8) !important;
 }
+@font-face {
+  font-family: "Chemvre Personal Use Only";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Chemvre Personal Use Only"),
+    url("https://fonts.cdnfonts.com/s/30388/Chemvre Personal Use Only.woff")
+      format("woff");
+}
 
 #brand-name {
   padding-left: 12px;
+  font-family: "Chemvre Personal Use Only";
   font-size: 35px;
   text-decoration: underline;
   text-decoration-color: #8c2329;
