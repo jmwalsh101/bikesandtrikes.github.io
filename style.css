@@ -13,13 +13,6 @@ h1 {
   font-family: Georgia;
   text-align: center;
 }
-/*
-@media (min-width: 992px) {
-  .modal-dialog {
-    margin-top: 10%;
-  }
-}
-*/
 
 @media (min-width: 992px) {
   .header {
@@ -138,18 +131,35 @@ h1 {
 
 /* change the title color */
 .navbar-brand {
-  font-size: 14px;
-  font-family: Verdana;
+  font-family: "Chemvre Personal Use Only", sans-serif;
+  padding: 0;
+  margin-bottom: 0;
+  margin-right: 1rem;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-/* change the nav link color */
-.navbar-custom .navbar-nav .nav-link {
-  color: #fd7e14;
+.nav-link {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
-/* change the color of hovered nav links */
-.navbar-custom .nav-item:hover .nav-link {
-  color: #ffffff;
+#brand-name {
+  padding-left: 12px;
+  font-size: 35px;
+  text-decoration: underline;
+  text-decoration-color: #8c2329;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 4px;
+  margin-bottom: 0;
+}
+
+.navbar-item:hover {
+  background-color: #8c2329;
+  color: rgba(255, 255, 255) !important;
+}
+.nav-link:hover {
+  color: rgba(255, 255, 255) !important;
 }
 
 /* Carousel in landing section */
