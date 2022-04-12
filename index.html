@@ -300,7 +300,7 @@
                     data-sb-validations="required"
                   />
                   <label for="name">Name</label>
-                  <div
+                  <div id="nameError"
                     class="invalid-feedback"
                     data-sb-feedback="name:required"
                   >
@@ -318,13 +318,8 @@
                     data-sb-validations="required,email"
                   />
                   <label for="emailAddress">Email Address</label>
-                  <div
-                    class="invalid-feedback"
-                    data-sb-feedback="emailAddress:required"
-                  >
-                    Email Address is required.
-                  </div>
-                  <div
+                  
+                  <div id="emailError"
                     class="invalid-feedback"
                     data-sb-feedback="emailAddress:email"
                   >
@@ -343,25 +338,14 @@
                     data-sb-validations="required"
                   ></textarea>
                   <label for="message">Message</label>
-                  <div
+                  <div id="msgError"
                     class="invalid-feedback"
                     data-sb-feedback="message:required"
                   >
-                    Message is required.
                   </div>
                 </div>
 
-                <!-- Submit success message -->
-                <div class="d-none" id="submitSuccessMessage">
-                  <div class="text-center mb-3">
-                    <div class="fw-bolder">Form submission successful!</div>
-                    <p>To activate this form, sign up at</p>
-                    <a href="https://startbootstrap.com/solution/contact-forms"
-                      >https://startbootstrap.com/solution/contact-forms</a
-                    >
-                  </div>
-                </div>
-
+              
                 <!-- Submit error message -->
                 <div class="d-none" id="submitErrorMessage">
                   <div class="text-center text-danger mb-3">
@@ -370,16 +354,24 @@
                 </div>
 
                 <!-- Submit button -->
-                <div class="d-grid">
+               <!-- <div class="d-grid">
                   <button
-                    class="btn btn-primary btn-lg disabled"
+                    class="btn btn-primary btn-lg"
                     id="submitButton"
                     type="submit"
                   >
                     Submit
                   </button>
-                </div>
+                </div>-->
               </form>
+              <button
+                    class="btn btn-primary btn-lg"
+                    id="submitButton"
+                    type="submit"
+                    onclick=validateform() 
+                  >
+                    Submit
+               </button>
               <!-- End of contact form -->
             </div>
           </div>
