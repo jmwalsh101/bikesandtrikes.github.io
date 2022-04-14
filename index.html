@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="style.css" />
 
     <link
+      defer
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -105,23 +106,19 @@
             style="
               background-image: url('images/bikes/christopher-burns-Pl0s3qM0A_w-unsplash.jpg');
             "
-          >
-          </div>
+          ></div>
           <div
             class="carousel-item"
             style="
               background-image: url('images/bikes/leon-seierlein-VcBMbn7KXHQ-unsplash.jpg');
             "
-          >
-
-          </div>
+          ></div>
           <div
             class="carousel-item"
             style="
               background-image: url('images/bikes/ondrej-trnak-AxyVu2-chik-unsplash.jpg');
             "
-          >
-          </div>
+          ></div>
         </div>
         <button
           class="carousel-control-prev"
@@ -145,223 +142,273 @@
     </header>
 
     <!-- About us -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <h1 class="fw-light">About us</h1>
-        <p>
-          We’re motorcycle enthusiasts who like nothing more than the smell of burnt rubber on road. We’ve peddled the best café racers and the worst trikes imaginable, so we know how to get you in the right saddle for you to ride your ride. Founded in 2022, we know the latest models to the classics. Whether you're looking for a sturdy beast to get you to Timbuktu and back or a smart little piece to cut down on the morning commute, we've got it all. No matter what, we'll make sure you'll have something that gets the blood pulsing and keeps you safe. The freedom of the road is yours to take. </p>
-          <div id="second-paragraph">
-            <div>
-            <h3>Get Out and See the World</h3>
-          <p>If you're looking to hit out on the open road and find where it'll take you, trust us to set you up with something right. All you'll need is the petrol to keep the bike going and the will to keep on pressing into the world. Feel the wind in your face and keep your eyes on the road without ever needing to worry about the bike. It'll take you wherever you want to go and will leave fears of the unknown many miles behind.</p>
-          <p>Experience new cultures. See a different side of life. Feel what it means to live in this world...</p>
-          <p>Take your ride from <span id="brand-name-p">Bikes and Trikes</span></p>
-          </div>
-          <video id="pause" width="auto" height="300" autoplay muted loop onclick="pauseVideo1()">
-            <source src="videos/hd-movie.mp4" type="video/mp4">
+    <h1 class="section-header" id="about-us">About us</h1>
+    <div class="container">
+      <p>
+        We’re motorcycle enthusiasts who like nothing more than the smell of
+        burnt rubber on road. We’ve peddled the best café racers and the worst
+        trikes imaginable, so we know how to get you in the right saddle for you
+        to ride your ride. Founded in 2022, we know the latest models to the
+        classics. Whether you're looking for a sturdy beast to get you to
+        Timbuktu and back or a smart little piece to cut down on the morning
+        commute, we've got it all. No matter what, we'll make sure you'll have
+        something that gets the blood pulsing and keeps you safe. The freedom of
+        the road is yours to take.
+      </p>
+      <div class="descriptions" id="second-paragraph">
+        <div>
+          <h3>Get Out and See the World</h3>
+          <p>
+            If you're looking to hit out on the open road and find where it'll
+            take you, trust us to set you up with something right. All you'll
+            need is the petrol to keep the bike going and the will to keep on
+            pressing into the world. Feel the wind in your face and keep your
+            eyes on the road without ever needing to worry about the bike. It'll
+            take you wherever you want to go and will leave fears of the unknown
+            many miles behind.
+          </p>
+          <p>
+            Experience new cultures. See a different side of life. Feel what it
+            means to live in this world...
+          </p>
+          <p>
+            Get your ride from <span id="brand-name-p">Bikes and Trikes</span>
+          </p>
+        </div>
+        <div class="video1">
+          <video id="pause" autoplay muted loop onclick="pauseVideo1()">
+            <source src="videos/hd-movie.mp4" type="video/mp4" />
+            Your browser does not support the video type.
+            <span class=".tooltip">Click to pause or to play</span>
+          </video>
+        </div>
+      </div>
+      <div class="descriptions" id="third-paragraph">
+        <div class="video2">
+          <video
+            id="third-p-order-2"
+            id="pause"
+            width="auto"
+            height="300"
+            autoplay
+            muted
+            loop
+            onclick="pauseVideo2()"
+          >
+            <source src="videos/commute.mp4" type="video/mp4" />
             Your browser does not support the video type.
           </video>
-          </div>
-          <div id="third-paragraph">
-            <video id="third-p-order-2" id="pause" width="auto" height="300" autoplay muted loop onclick="pauseVideo2()">
-              <source src="videos/commute.mp4" type="video/mp4">
-              Your browser does not support the video type.
-            </video>
-            <div id="third-p-order-1"><h3 >Travel in Style</h3>
-            <p>If you're riding local, hit the road with one of our urban bikes. It'll take you to heaven and back - and to work too, if you can even think of stopping. You'll dodge between the traffic, make the green lights, and wow passers-by.</p>
-            <p>You'll see your city like you've never seen it before. Close to the road. Close to the people. And closer to streets and avenues that you never went down before...</p>
-            <p>Make the most of where you live with <span id="brand-name-p">Bikes and Trikes</span></p>
-          </div>
+        </div>
+        <div id="third-p-order-1">
+          <h3>Travel in Style</h3>
+          <p>
+            If you're riding local, hit the road with one of our urban bikes.
+            It'll take you to heaven and back - and to work too, if you can even
+            think of stopping. You'll dodge between the traffic, make the green
+            lights, and wow passers-by.
+          </p>
+          <p>
+            You'll see your city like you've never seen it before. Close to the
+            road. Close to the people. And closer to streets and avenues that
+            you never went down before...
+          </p>
+          <p>
+            Make the most of where you live with
+            <span id="brand-name-p">Bikes and Trikes</span>
+          </p>
+        </div>
       </div>
-    </section>
 
-    <!-- Page Content -->
-    <h1 class="fw-light">Thumbnail Gallery</h1>
-    <p class="lead">Sample text</p>
-    <section class="gallery min-vh-100">
-      <div class="container-xs container-sm container-md container-lg">
+      <!-- Page Content -->
+      <h1 class="section-header">Gallery</h1>
+      <div class="container">
+        <p>
+          Below you'll find a selection of our bikes. See something you like?
+          Contact us. Don't see anything you like? Contact us. We can sort you
+          out with anything you need and then some - there's only so much we can
+          show!
+        </p>
+        <section class="gallery min-vh-100">
+          <div class="container-xs container-sm container-md container-lg">
+            <div
+              class="row row-cols-1 row-cols-sm-2 row-cols-md-3"
+              id="gallery-outline"
+            >
+              <div class="gallery-border">
+                <img
+                  class="gallery-item"
+                  src="images/bikes/christopher-burns-Pl0s3qM0A_w-unsplash.jpg"
+                />
+              </div>
+              <div class="gallery-border">
+                <img
+                  class="gallery-item"
+                  src="images/bikes/duncan-adler-TVsVauS4QKo-unsplash.jpg"
+                />
+              </div>
+              <div class="gallery-border">
+                <img
+                  class="gallery-item"
+                  src="images/bikes/gijs-coolen--c-gTqJvo-Y-unsplash.jpg"
+                />
+              </div>
+              <div class="gallery-border">
+                <img
+                  class="gallery-item"
+                  src="images/bikes/galleryimage4.jpeg"
+                />
+              </div>
+              <div class="gallery-border">
+                <img
+                  class="gallery-item"
+                  src="images/bikes/gijs-coolen-pXf3txdLbSw-unsplash.jpg"
+                />
+              </div>
+              <div class="gallery-border">
+                <img
+                  class="gallery-item"
+                  src="images/bikes/roberto-nickson-2E4F58dLPFo-unsplash.jpg"
+                />
+              </div>
+              <div class="gallery-border">
+                <img
+                  class="gallery-item"
+                  src="images/bikes/ondrej-trnak-AxyVu2-chik-unsplash.jpg"
+                />
+              </div>
+              <div class="gallery-border">
+                <img
+                  class="gallery-item"
+                  src="images/bikes/vander-films-_y6KWRnD_zM-unsplash.jpg"
+                />
+              </div>
+              <div id="last-image" class="center-block">
+                <div class="gallery-border">
+                  <img
+                    class="gallery-item"
+                    src="images/bikes/volkan-olmez-SvMlXH_eW6o-unsplash.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Modal -->
         <div
-          class="row row-cols-1 row-cols-sm-2 row-cols-md-3"
-          id="gallery-outline"
+          class="modal fade"
+          id="gallery-modal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
         >
-          <div class="gallery-border">
-            <img
-              class="gallery-item"
-              src="images/bikes/christopher-burns-Pl0s3qM0A_w-unsplash.jpg"
-            />
-          </div>
-          <div class="gallery-border">
-            <img
-              class="gallery-item"
-              src="images/bikes/duncan-adler-TVsVauS4QKo-unsplash.jpg"
-            />
-          </div>
-          <div class="gallery-border">
-            <img
-              class="gallery-item"
-              src="images/bikes/gijs-coolen--c-gTqJvo-Y-unsplash.jpg"
-            />
-          </div>
-          <div class="gallery-border">
-            <img class="gallery-item" src="images/bikes/galleryimage4.jpeg" />
-          </div>
-          <div class="gallery-border">
-            <img
-              class="gallery-item"
-              src="images/bikes/gijs-coolen-pXf3txdLbSw-unsplash.jpg"
-            />
-          </div>
-          <div class="gallery-border">
-            <img
-              class="gallery-item"
-              src="images/bikes/roberto-nickson-2E4F58dLPFo-unsplash.jpg"
-            />
-          </div>
-          <div class="gallery-border">
-            <img
-              class="gallery-item"
-              src="images/bikes/ondrej-trnak-AxyVu2-chik-unsplash.jpg"
-            />
-          </div>
-          <div class="gallery-border">
-            <img
-              class="gallery-item"
-              src="images/bikes/vander-films-_y6KWRnD_zM-unsplash.jpg"
-            />
-          </div>
-          <div id="last-image" class="center-block">
-            <div class="gallery-border">
-              <img
-                class="gallery-item"
-                src="images/bikes/volkan-olmez-SvMlXH_eW6o-unsplash.jpg"
-              />
+          <div
+            class="modal-dialog modal-dialogue-centered modal-lg"
+            role="document"
+          >
+            <div class="modal-content">
+              <div class="modal-body">
+                <img
+                  src="images/bikes/christopher-burns-Pl0s3qM0A_w-unsplash.jpg"
+                  class="modal-img"
+                  alt="modal image"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="gallery-modal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div
-        class="modal-dialog modal-dialogue-centered modal-lg"
-        role="document"
-      >
-        <div class="modal-content">
-          <div class="modal-body">
-            <img
-              src="images/bikes/christopher-burns-Pl0s3qM0A_w-unsplash.jpg"
-              class="modal-img"
-              alt="modal image"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+        <!-- Bootstrap 5 Contact Form Snippet -->
 
-    <!-- Bootstrap 5 Contact Form Snippet -->
-
-    <div id="contact" class="container px-5 my-5">
-      <div class="row justify-content-center" >
-        <div class="col-lg-8 form-border">
-          <div class="card shadow-lg">
-            <div class="card-body p-4 ">
-              <div class="text-center">
-                <h1 id="contact-us">Contact Us</h1>
-                <p>
-                  Please complete the form below and hit submit. We'll get back
-                  to you ASAP.
-                </p>
-              </div>
-
-              <!-- * * * * * * * * * * * * * *
+        <div id="contact" class="container px-5 my-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 form-border">
+              <div class="card shadow-lg">
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <h1 id="contact-us">Contact Us</h1>
+                    <p>
+                      Please complete the form below and hit submit. We'll get
+                      back to you ASAP.
+                    </p>
+                  </div>
+                  <!-- * * * * * * * * * * * * * *
           // * * SB Forms Contact Form * *
           // * * * * * * * * * * * * * * *
-
           // This form is pre-integrated with SB Forms.
           // To make this form functional, sign up at
           // https://startbootstrap.com/solution/contact-forms
           // to get an API token!
           -->
 
-              <form
-                id="contactForm"
-                data-sb-form-api-token="API_TOKEN"
-              >
-              <div id=""
-                <!-- Name Input -->
-                <div class="form-floating mb-3">
-                  <input
-                    class="form-control"
-                    id="name"
-                    type="text"
-                    placeholder="Name"
-                    data-sb-validations="required"
-                  />
-                  <label for="name">Name</label>
-                  <div
-                    id="nameError"
-                    class="invalid-feedback"
-                    data-sb-feedback="name:required"
-                  >
-                    Name is required.
-                  </div>
-                </div>
+                  <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Name Input -->
+                    <div class="form-floating mb-3">
+                      <input
+                        class="form-control"
+                        id="name"
+                        type="text"
+                        placeholder="Name"
+                        data-sb-validations="required"
+                      />
+                      <label for="name">Name</label>
+                      <div
+                        id="nameError"
+                        class="invalid-feedback"
+                        data-sb-feedback="name:required"
+                      >
+                        Name is required.
+                      </div>
+                    </div>
 
-                <!-- Email Input -->
-                <div class="form-floating mb-3">
-                  <input
-                    class="form-control"
-                    id="emailAddress"
-                    type="email"
-                    placeholder="Email Address"
-                    data-sb-validations="required,email"
-                  />
-                  <label for="emailAddress">Email Address</label>
+                    <!-- Email Input -->
+                    <div class="form-floating mb-3">
+                      <input
+                        class="form-control"
+                        id="emailAddress"
+                        type="email"
+                        placeholder="Email Address"
+                        data-sb-validations="required,email"
+                      />
+                      <label for="emailAddress">Email Address</label>
 
-                  <div
-                    id="emailError"
-                    class="invalid-feedback"
-                    data-sb-feedback="emailAddress:email"
-                  >
-                    Email Address Email is not valid.
-                  </div>
-                </div>
+                      <div
+                        id="emailError"
+                        class="invalid-feedback"
+                        data-sb-feedback="emailAddress:email"
+                      >
+                        Email Address Email is not valid.
+                      </div>
+                    </div>
 
-                <!-- Message Input -->
-                <div class="form-floating mb-3">
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    type="text"
-                    placeholder="Message"
-                    style="height: 10rem"
-                    data-sb-validations="required"
-                  ></textarea>
-                  <label for="message">Message</label>
-                  <div
-                    id="msgError"
-                    class="invalid-feedback"
-                    data-sb-feedback="message:required"
-                  ></div>
-                </div>
+                    <!-- Message Input -->
+                    <div class="form-floating mb-3">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        type="text"
+                        placeholder="Message"
+                        style="height: 10rem"
+                        data-sb-validations="required"
+                      ></textarea>
+                      <label for="message">Message</label>
+                      <div
+                        id="msgError"
+                        class="invalid-feedback"
+                        data-sb-feedback="message:required"
+                      ></div>
+                    </div>
 
-                <!-- Submit error message -->
-                <div class="d-none" id="submitErrorMessage">
-                  <div class="text-center text-danger mb-3">
-                    Error sending message!
-                  </div>
-                </div>
-
-                <!-- Submit button -->
-                <!-- <div class="d-grid">
+                    <!-- Submit error message -->
+                    <div class="d-none" id="submitErrorMessage">
+                      <div class="text-center text-danger mb-3">
+                        Error sending message!
+                      </div>
+                    </div>
+                  </form>
+                  <!-- Submit button -->
+                  <!-- <div class="d-grid">
                   <button
                     class="btn btn-primary btn-lg"
                     id="submitButton"
@@ -370,22 +417,28 @@
                     Submit
                   </button>
                 </div>-->
-              </form>
-              <div id="button-styling">
-              <button
-                class="btn-primary btn-lg"
-                id="submitButton"
-                type="submit"
-                onclick="validateform()"
-              >
-                Submit
-              </button>
+
+                  <div id="button-styling">
+                    <button
+                      class="btn-primary btn-lg"
+                      id="submitButton"
+                      type="submit"
+                      onclick="validateform()"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                  <!-- End of contact form -->
+                </div>
               </div>
-              <!-- End of contact form -->
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <br />
+      <p class="footer">A project for Web Design and Client Side Scripting.</p>
+    </footer>
   </body>
 </html>

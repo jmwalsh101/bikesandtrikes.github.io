@@ -21,6 +21,14 @@ h3 {
   font-style: italic;
 }
 
+footer {
+  background-color: #b62f36;
+  height: 80px;
+  margin-top: 5%;
+  width: 100%;
+  opacity: 0.8;
+}
+
 @media (min-width: 992px) {
   .header {
     display: flex;
@@ -34,6 +42,11 @@ h3 {
   .modal-dialog {
     margin-top: 15%;
   }
+
+  #brand-name-p {
+    font-size: 25px;
+  }
+
   #last-image {
     margin: 0;
     padding: 0;
@@ -53,26 +66,47 @@ h3 {
   }
   #second-paragraph {
     display: flex;
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
   #third-paragraph {
     display: flex;
     justify-content: flex-end;
-    margin-top: 60px;
+    margin-top: 80px;
+  }
+  .video1 {
+    width: 265%;
+    height: auto;
+    margin-top: 3%;
+    padding-left: 2%;
+  }
+
+  .video2 {
+    width: 155%;
+    height: auto;
+    margin-top: 3%;
+    padding-right: 3%;
   }
 
   video {
-    margin-right: 60px;
-    margin-left: 20px;
-    margin-top: 3%;
-    padding: 0;
-    height: 300 !important;
-    width: auto !important;
+    height: auto !important;
+    width: 100% !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  p {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  .descriptions {
+    margin-top: 60px;
+  }
+  #brand-name-p {
+    font-size: 25px;
+  }
+
   .header {
     display: flex;
     flex-direction: center;
@@ -108,16 +142,47 @@ h3 {
     margin-top: 50px;
   }
 
-  #third-p-order-1 {
+  .video2 {
     order: 1;
   }
 
   #third-p-order-2 {
     order: 2;
   }
+  .video1 {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    padding-left: 2%;
+  }
+
+  .video2 {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    padding-right: 3%;
+  }
+
+  video {
+    height: auto !important;
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  p {
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  .descriptions {
+    margin-top: 50px;
+  }
+
+  #brand-name-p {
+    font-size: 20px;
+  }
+
   .modal-dialog {
     margin-top: 50%;
   }
@@ -144,16 +209,46 @@ h3 {
     margin-top: 50px;
   }
 
-  #third-p-order-1 {
+  .video2 {
     order: 1;
   }
 
   #third-p-order-2 {
     order: 2;
   }
+  .video1 {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    padding-left: 2%;
+  }
+
+  .video2 {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    padding-right: 3%;
+  }
+
+  video {
+    height: auto !important;
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 0px) and (max-width: 575px) {
+  p {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+
+  .descriptions {
+    margin-top: 40px;
+  }
+  #brand-name-p {
+    font-size: 20px;
+  }
+
   .modal-dialog {
     margin-top: 80%;
   }
@@ -195,12 +290,30 @@ h3 {
     margin-top: 50px;
   }
 
-  #third-p-order-1 {
+  .video2 {
     order: 1;
   }
 
   #third-p-order-2 {
     order: 2;
+  }
+  .video1 {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    padding-left: 2%;
+  }
+
+  .video2 {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    padding-right: 3%;
+  }
+
+  video {
+    height: auto !important;
+    width: 100% !important;
   }
 }
 
@@ -239,7 +352,6 @@ h3 {
 
 #brand-name-p {
   font-family: "Chemvre Personal Use Only";
-  font-size: 25px;
   text-decoration: underline;
   text-decoration-color: #b62f36;
   text-underline-offset: 1px;
@@ -351,4 +463,19 @@ input:focus {
 
 video:hover {
   cursor: pointer;
+}
+
+.section-header {
+  background: radial-gradient(rgba(83, 86, 90, 0.5) 0%, rgba(0, 0, 0) 70%);
+  padding: 20px;
+  margin-top: 80px;
+}
+
+#about-us {
+  margin-top: 0;
+}
+.footer {
+  color: black;
+  font-weight: 500;
+  margin-left: 5%;
 }

@@ -83,5 +83,3 @@ function pauseVideo2() {
     return (v2Playing = true);
   }
 }
-
-// video 1 pause/play
