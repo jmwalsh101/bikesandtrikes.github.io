@@ -211,3 +211,58 @@ img {
   margin: 0;
   padding: 2px;
 }
+
+.form-border {
+  border-style: outset;
+  border-color: #b62f36;
+  border-width: thick;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+#submitButton {
+  background-color: #b62f36 !important;
+  border: 0;
+}
+
+#submitButton:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  background-image: url("images/bikes/form-background.jpeg");
+  background-position: center top;
+  opacity: 0.8;
+}
+
+input,
+textarea {
+  background-color: rgba(83, 86, 90, 0.5) !important;
+  color: white !important;
+}
+
+#button-styling {
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+label {
+  color: white;
+  font-style: italic;
+}
+
+input:hover,
+textarea:hover {
+  background-color: rgba(193, 190, 181, 0.5) !important;
+  color: white !important;
+}
+
+textarea:focus,
+input:focus {
+  background-color: rgba(193, 190, 181, 0.5) !important;
+}
+
+#contact-us {
+  color: white;
+}
