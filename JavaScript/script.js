@@ -16,6 +16,8 @@ function validateform() {
   var nameVal = document.getElementById("name").value;
   var emailVal = document.getElementById("emailAddress").value;
   var messageVal = document.getElementById("message").value;
+  //rev sound effect onclick
+  document.getElementById("rev").play();
   alert(messageVal);
   //if all inputs are empty
   if (nameVal == "" || emailVal == "" || messageVal == "") {
