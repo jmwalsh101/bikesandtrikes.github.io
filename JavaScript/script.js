@@ -1,3 +1,4 @@
+// gallery lightbox
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("gallery-item")) {
     const src = e.target.getAttribute("src");
@@ -8,6 +9,7 @@ document.addEventListener("click", function (e) {
     myModal.show();
   }
 });
+
 // contact form
 
 function validateform() {
@@ -57,3 +59,29 @@ function validateform() {
 // need to add to HTML
 // add to button: onclick=validateform()
 //html5 validation
+
+// video pause/play
+var v1Playing = true; //video 1
+var v2Playing = true; //video 2
+
+function pauseVideo1() {
+  if (v1Playing == true) {
+    document.getElementById("pause").pause();
+    return (v1Playing = false);
+  } else {
+    document.getElementById("pause").play();
+    return (v1Playing = true);
+  }
+}
+
+function pauseVideo2() {
+  if (v2Playing == true) {
+    document.getElementById("third-p-order-2").pause();
+    return (v2Playing = false);
+  } else {
+    document.getElementById("third-p-order-2").play();
+    return (v2Playing = true);
+  }
+}
+
+// video 1 pause/play

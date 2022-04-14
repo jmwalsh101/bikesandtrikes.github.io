@@ -53,13 +53,13 @@ h3 {
   }
   #second-paragraph {
     display: flex;
-    margin-top: 40px;
+    margin-top: 60px;
   }
 
   #third-paragraph {
     display: flex;
     justify-content: flex-end;
-    margin-top: 50px;
+    margin-top: 60px;
   }
 
   video {
@@ -347,4 +347,8 @@ input:focus {
 
 .gallery-item:hover {
   filter: brightness(150%);
+}
+
+video:hover {
+  cursor: pointer;
 }
