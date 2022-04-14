@@ -6,12 +6,19 @@ body {
 p {
   color: white;
   font-family: Helvetica;
-  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 h1 {
   color: #b62f36;
   font-family: Georgia;
   text-align: center;
+}
+
+h3 {
+  color: #b62f36;
+  font-family: Georgia;
+  font-style: italic;
 }
 
 @media (min-width: 992px) {
@@ -43,6 +50,25 @@ h1 {
     border-style: outset;
     border-color: #b62f36;
     border-width: thick;
+  }
+  #second-paragraph {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  #third-paragraph {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+  }
+
+  video {
+    margin-right: 60px;
+    margin-left: 20px;
+    margin-top: 3%;
+    padding: 0;
+    height: 300 !important;
+    width: auto !important;
   }
 }
 
@@ -76,6 +102,19 @@ h1 {
     border-color: #b62f36;
     border-width: thick;
   }
+  #third-paragraph {
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+  }
+
+  #third-p-order-1 {
+    order: 1;
+  }
+
+  #third-p-order-2 {
+    order: 2;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -98,6 +137,19 @@ h1 {
   .modal-content {
     padding: 5px;
     margin: 0;
+  }
+  #third-paragraph {
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+  }
+
+  #third-p-order-1 {
+    order: 1;
+  }
+
+  #third-p-order-2 {
+    order: 2;
   }
 }
 
@@ -137,6 +189,19 @@ h1 {
     max-width: 70%;
     margin-left: 15%;
   }
+  #third-paragraph {
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+  }
+
+  #third-p-order-1 {
+    order: 1;
+  }
+
+  #third-p-order-2 {
+    order: 2;
+  }
 }
 
 /* change the title color */
@@ -169,6 +234,16 @@ h1 {
   text-decoration-color: #b62f36;
   text-underline-offset: 2px;
   text-decoration-thickness: 4px;
+  margin-bottom: 0;
+}
+
+#brand-name-p {
+  font-family: "Chemvre Personal Use Only";
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: #b62f36;
+  text-underline-offset: 1px;
+  text-decoration-thickness: 2px;
   margin-bottom: 0;
 }
 
