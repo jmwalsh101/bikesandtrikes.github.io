@@ -58,7 +58,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto">
             <li class="navbar-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about-us">About</a>
             </li>
             <li class="navbar-item">
               <a class="nav-link" href="#gallery">Gallery</a>
@@ -142,7 +142,7 @@
     </header>
 
     <!-- About us -->
-    <h1 class="section-header" id="about-us">About us</h1>
+    <h1 class="section-header" id="about-us">About Us</h1>
     <div class="container">
       <p>
         We’re motorcycle enthusiasts who like nothing more than the smell of
@@ -220,7 +220,7 @@
       </div>
 
       <!-- Page Content -->
-      <h1 class="section-header">Gallery</h1>
+      <h1 class="section-header" id="gallery">Gallery</h1>
       <div class="container">
         <p>
           Below you'll find a selection of our bikes. See something you like?
@@ -228,7 +228,7 @@
           out with anything you need and then some - there's only so much we can
           show!
         </p>
-        <section class="gallery min-vh-100">
+        <section class="gallery">
           <div class="container-xs container-sm container-md container-lg">
             <div
               class="row row-cols-1 row-cols-sm-2 row-cols-md-3"
@@ -320,14 +320,66 @@
         </div>
 
         <!-- Bootstrap 5 Contact Form Snippet -->
+        <h1 class="section-header" id="contact">Contact Us</h1>
+        <div id="contact-us-container">
+          <div class="contact-us-box" id="contact-store">
+            <img src="images/bikes/storefront.jpeg" />
+          </div>
 
-        <div id="contact" class="container px-5 my-5">
+          <div class="contact-us-box" id="contact-text">
+            <p>
+              Don't be afraid to drop in and say "hi"! We're a friendly bunch of
+              people and love to talk motorcycles - whether that's talking shop
+              or talking chit chat.
+            </p>
+            <p>
+              We'll set you up with a new bike, help you out with an old bike,
+              and give the best advice you'll hear for as far as you can ride in
+              a day.
+            </p>
+            <p>
+              So take a look at where we are, what our front door looks like,
+              and take note of the opening hours.
+            </p>
+            <p>
+              You can hit us up by phone - if we can hear it ringing over the
+              revs - or you can drop us a line via the contact form below.
+            </p>
+            <p>
+              Never be afraid to get in touch with us at
+              <span id="brand-name-p">Bikes and Trikes</span>
+            </p>
+          </div>
+          <div class="gmap-canvas contact-us-box" id="contact-map">
+            <iframe
+              id="gmap-canvas"
+              src="https://maps.google.com/maps?q=main%20street%20new%20jersey&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+            <br />
+            <br />
+            <p class="contact-details">
+              <span class="contact-label">Address:</span> 2301 Mainstreet, New
+              Jersey
+            </p>
+            <p class="contact-details">
+              <span class="contact-label">Phone:</span> 001 465 6382
+            </p>
+            <p class="contact-details">
+              <span class="contact-label">Opening Hours:</span> Mon-Sat
+              9.30-17.30
+            </p>
+          </div>
+        </div>
+
+        <div class="container px-5 my-5">
           <div class="row justify-content-center">
             <div class="col-lg-8 form-border">
               <div class="card shadow-lg">
                 <div class="card-body p-4">
                   <div class="text-center">
-                    <h1 id="contact-us">Contact Us</h1>
+                    <h2 id="contact-us">Contact Form</h2>
                     <p>
                       Please complete the form below and hit submit. We'll get
                       back to you ASAP.
