@@ -16,6 +16,9 @@ function validateform() {
   var nameVal = document.getElementById("name").value;
   var emailVal = document.getElementById("emailAddress").value;
   var messageVal = document.getElementById("message").value;
+  //contact array
+  var retainVals=[nameVal, emailVal, messageVal];
+  console.log(retainVals);
   //rev sound effect onclick
   document.getElementById("rev").play();
   alert(messageVal);
