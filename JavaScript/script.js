@@ -14,28 +14,29 @@ document.addEventListener("click", function (e) {
 
 function validateform() {
   var nameVal = document.getElementById("name").value;
+  var phoneVal= document.getElementById("phone").value;
   var emailVal = document.getElementById("emailAddress").value;
   var messageVal = document.getElementById("message").value;
   //contact array
-  var retainVals=[nameVal, emailVal, messageVal];
+  var retainVals=[nameVal, phoneVal, emailVal, messageVal];
   console.log(retainVals);
   //rev sound effect onclick
   document.getElementById("rev").play();
   alert(messageVal);
   //if all inputs are empty
-  if (nameVal == "" || emailVal == "" || messageVal == "") {
+  if (nameVal == "" || phoneVal ==""|| emailVal == "" || messageVal == "") {
     //Error Code here
     alert("Please enter valid data.");
   }
-  if (nameVal.length < 2 || nameVal.length > 22) {
+  if (phoneVal.length < 7 || nameVal.length > 11) {
     // Error Code here
-    alert("Your Name must be less than 22 but more than 2 Characters.");
+    alert("please emter a valid mobile number.");
     //document.contactForm.name.focus();
     document
-      .getElementById("nameError")
+      .getElementById("phoneError")
       .insertAdjacentHTML(
         "afterend",
-        "<h7>Error:Your name must be less than 22 but more than 2 Characters.</h7>"
+        "<h7>Error:Your mobile must be at least 10digits long.</h7>"
       );
   }
   if (emailVal.length < 11 || emailVal.length > 30 || !address.contains("@")) {
