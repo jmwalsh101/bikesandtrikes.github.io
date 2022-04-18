@@ -5,6 +5,7 @@
   src: local("Chemvre Personal Use Only"),
     url("https://fonts.cdnfonts.com/s/30388/Chemvre Personal Use Only.woff")
       format("woff");
+  font-display: swap;
 }
 
 /* Elements */
