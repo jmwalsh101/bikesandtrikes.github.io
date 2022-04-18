@@ -405,17 +405,33 @@
                         data-sb-validations="required"
                       />
                       <label for="name">Name</label>
-                    <!--number input-->
+                      <div
+                        id="nameError"
+                        class="invalid-feedback"
+                        data-sb-feedback="name:required"
+                      >
+                        Name is required.
+                      </div>
+                    </div>
+                    <!--Mobile input-->
                     <div class="form-floating mb-3">
                       <input
                         class="form-control"
                         id="phone"
                         type="tel"
-                        placeholder="mobile"
+                        placeholder="Mobile number"
                         data-sb-validations="required"
                       />
-                      <label for="tel">Mobile Number</label>
-          
+                      <label for="name">Mobile Number</label>
+                      <div
+                        id="phoneError"
+                        class="invalid-feedback"
+                        data-sb-feedback="phone:required"
+                      >
+                        Please enter valid Mobile Number.
+                      </div>
+                    </div>
+
                     <!-- Email Input -->
                     <div class="form-floating mb-3">
                       <input

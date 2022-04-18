@@ -20,6 +20,9 @@ function validateform() {
   //contact array
   var retainVals=[nameVal, phoneVal, emailVal, messageVal];
   console.log(retainVals);
+  //local storage of contact array
+  localStorage.setItem("contactdata", retainVals);
+
   //rev sound effect onclick
   document.getElementById("rev").play();
   alert(messageVal);
@@ -30,7 +33,7 @@ function validateform() {
   }
   if (phoneVal.length < 7 || nameVal.length > 11) {
     // Error Code here
-    alert("please emter a valid mobile number.");
+    alert("Please enter a valid mobile number.");
     //document.contactForm.name.focus();
     document
       .getElementById("phoneError")
