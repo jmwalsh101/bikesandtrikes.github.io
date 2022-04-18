@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Chemvre Personal Use Only";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Chemvre Personal Use Only"),
+    url("https://fonts.cdnfonts.com/s/30388/Chemvre Personal Use Only.woff")
+      format("woff");
+}
+
+/* Elements */
 body {
   font-size: 100%;
   background-color: #000000;
@@ -9,6 +19,7 @@ p {
   font-size: 1.25rem;
   font-weight: 300;
 }
+
 h1,
 h2 {
   color: #b62f36;
@@ -30,24 +41,65 @@ footer {
   opacity: 0.8;
 }
 
+img {
+  max-width: 100%;
+}
+
+video:hover {
+  cursor: pointer;
+}
+
+label {
+  color: white;
+  font-style: italic;
+}
+
+input,
+textarea {
+  background-color: rgba(83, 86, 90, 0.5) !important;
+  color: white !important;
+}
+
+input:hover,
+textarea:hover {
+  background-color: rgba(193, 190, 181, 0.5) !important;
+  color: white !important;
+}
+
+textarea:focus,
+input:focus {
+  background-color: rgba(193, 190, 181, 0.5) !important;
+  border-color: #c12d34 !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Classes */
+
+.carousel-item {
+  height: 50vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.gallery {
+  padding: 80px, 0;
+}
+
 .section-header {
   background: radial-gradient(rgba(83, 86, 90, 0.5) 0%, rgba(0, 0, 0) 70%);
   padding: 20px;
   margin-top: 80px;
 }
 
-#about-us {
-  margin-top: 0;
-}
 .footer {
   color: black;
   font-weight: 500;
   margin-left: 5%;
-}
-
-#contact-us-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .gmap-canvas {
@@ -55,12 +107,6 @@ footer {
   width: 100%;
   margin: 0 !important;
   padding: 2% !important;
-}
-
-#gmap-canvas {
-  width: 100% !important;
-  height: 70% !important;
-  padding-top: 2% !important;
 }
 
 .contact-us-box {
@@ -74,6 +120,117 @@ footer {
 
 .contact-label {
   color: #c12d34;
+}
+
+.gallery-item:hover {
+  filter: brightness(150%);
+}
+
+.card {
+  background-image: url("images/bikes/form-background.webp");
+  background-position: center top;
+  opacity: 0.8;
+}
+
+.gallery-border {
+  margin: 0;
+  padding: 2px;
+}
+
+.form-border {
+  border-style: outset;
+  border-color: #b62f36;
+  border-width: thick;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin-bottom: 0;
+  margin-right: 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-link {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar-item:hover {
+  background-color: #b62f36;
+  color: rgba(255, 255, 255) !important;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255) !important;
+}
+
+/* IDs */
+
+#about-us {
+  margin-top: 0;
+}
+
+#contact-us-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#gmap-canvas {
+  width: 100% !important;
+  height: 70% !important;
+  padding-top: 2% !important;
+}
+
+#contact-us {
+  color: white;
+}
+
+#button-styling {
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#submitButton {
+  background-color: #b62f36 !important;
+  border: 0;
+}
+
+#submitButton:hover {
+  transform: scale(1.1);
+}
+
+#brand-name {
+  padding-left: 12px;
+  font-family: "Chemvre Personal Use Only";
+  font-size: 35px;
+  text-decoration: underline;
+  text-decoration-color: #b62f36;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 4px;
+  margin-bottom: 0;
+}
+
+#brand-name-p {
+  font-family: "Chemvre Personal Use Only";
+  text-decoration: underline;
+  text-decoration-color: #b62f36;
+  text-underline-offset: 1px;
+  text-decoration-thickness: 2px;
+  margin-bottom: 0;
+}
+
+/* Mixed */
+
+#gallery-modal .modal-img {
+  width: 100%;
+}
+
+.gallery img {
+  cursor: pointer;
 }
 
 @media (min-width: 992px) {
@@ -153,16 +310,22 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  /* Elements */
+
   p {
     font-size: 1.1rem;
     font-weight: 200;
   }
 
+  video {
+    height: auto !important;
+    width: 100% !important;
+  }
+
+  /* Classes */
+
   .descriptions {
     margin-top: 60px;
-  }
-  #brand-name-p {
-    font-size: 23px;
   }
 
   .header {
@@ -170,56 +333,62 @@ footer {
     flex-direction: center;
     justify-content: center;
   }
+
   .boxes {
     display: flex;
     justify-content: center;
   }
+
   .modal-dialog {
     margin-top: 30%;
   }
-  #last-image {
-    margin: 0;
-    padding: 0;
-  }
+
   .modal-body {
     margin: 0;
     padding: 0;
   }
+
   .modal-content {
     padding: 7px;
     margin: 0;
   }
+
+  .video2 {
+    order: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .video1 {
+    width: 100%;
+    height: auto;
+  }
+
+  /* IDs */
+
+  #brand-name-p {
+    font-size: 23px;
+  }
+
+  #last-image {
+    margin: 0;
+    padding: 0;
+  }
+
   #gallery-outline {
     border-style: outset;
     border-color: #b62f36;
     border-width: thick;
   }
+
   #third-paragraph {
     display: flex;
     flex-flow: column;
     margin-top: 50px;
   }
 
-  .video2 {
-    order: 1;
-  }
-
   #third-p-order-2 {
     order: 2;
-  }
-  .video1 {
-    width: 100%;
-    height: auto;
-  }
-
-  .video2 {
-    width: 100%;
-    height: auto;
-  }
-
-  video {
-    height: auto !important;
-    width: 100% !important;
   }
 
   #contact-store {
@@ -242,65 +411,73 @@ footer {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  /* Elements */
+
   p {
     font-size: 1.1rem;
     font-weight: 200;
   }
 
+  video {
+    height: auto !important;
+    width: 100% !important;
+  }
+  /* Classes */
+
   .descriptions {
     margin-top: 50px;
-  }
-
-  #brand-name-p {
-    font-size: 22px;
   }
 
   .modal-dialog {
     margin-top: 50%;
   }
-  #last-image {
-    margin: 0;
-    padding: 0;
-  }
+
   .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .modal-body {
     margin: 0;
     padding: 0;
   }
+
   .modal-content {
     padding: 5px;
     margin: 0;
   }
+
+  .video2 {
+    order: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .video1 {
+    width: 100%;
+    height: auto;
+  }
+
+  /* IDs */
+
+  #brand-name-p {
+    font-size: 22px;
+  }
+
+  #last-image {
+    margin: 0;
+    padding: 0;
+  }
+
   #third-paragraph {
     display: flex;
     flex-flow: column;
     margin-top: 50px;
   }
 
-  .video2 {
-    order: 1;
-  }
-
   #third-p-order-2 {
     order: 2;
-  }
-  .video1 {
-    width: 100%;
-    height: auto;
-  }
-
-  .video2 {
-    width: 100%;
-    height: auto;
-  }
-
-  video {
-    height: auto !important;
-    width: 100% !important;
   }
 
   #contact-store {
@@ -323,39 +500,42 @@ footer {
 }
 
 @media (min-width: 0px) and (max-width: 575px) {
+  /* Elements */
   p {
     font-size: 1rem;
     font-weight: 300;
   }
 
+  video {
+    height: auto !important;
+    width: 100% !important;
+  }
+
+  /* Classes */
+
   .descriptions {
     margin-top: 40px;
-  }
-  #brand-name-p {
-    font-size: 20px;
   }
 
   .modal-dialog {
     margin-top: 80%;
   }
+
   .container-xs {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
+
   .gallery-border {
     max-width: 50%;
   }
 
-  #last-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .modal-body {
     margin: 0;
     padding: 0;
   }
+
   .modal-content {
     padding: 4px;
     margin: 0;
@@ -370,32 +550,38 @@ footer {
     max-width: 70%;
     margin-left: 15%;
   }
+
+  .video2 {
+    order: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .video1 {
+    width: 100%;
+    height: auto;
+  }
+
+  /* IDs */
+
+  #brand-name-p {
+    font-size: 20px;
+  }
+
+  #last-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #third-paragraph {
     display: flex;
     flex-flow: column;
     margin-top: 50px;
   }
 
-  .video2 {
-    order: 1;
-  }
-
   #third-p-order-2 {
     order: 2;
-  }
-  .video1 {
-    width: 100%;
-    height: auto;
-  }
-
-  .video2 {
-    width: 100%;
-    height: auto;
-  }
-
-  video {
-    height: auto !important;
-    width: 100% !important;
   }
 
   #contact-store {
@@ -414,152 +600,4 @@ footer {
     height: 50% !important;
     padding-top: 2% !important;
   }
-}
-
-/* change the title color */
-.navbar-brand {
-  padding: 0;
-  margin-bottom: 0;
-  margin-right: 1rem;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.nav-link {
-  font-size: 25px;
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-@font-face {
-  font-family: "Chemvre Personal Use Only";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Chemvre Personal Use Only"),
-    url("https://fonts.cdnfonts.com/s/30388/Chemvre Personal Use Only.woff")
-      format("woff");
-}
-
-#brand-name {
-  padding-left: 12px;
-  font-family: "Chemvre Personal Use Only";
-  font-size: 35px;
-  text-decoration: underline;
-  text-decoration-color: #b62f36;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 4px;
-  margin-bottom: 0;
-}
-
-#brand-name-p {
-  font-family: "Chemvre Personal Use Only";
-  text-decoration: underline;
-  text-decoration-color: #b62f36;
-  text-underline-offset: 1px;
-  text-decoration-thickness: 2px;
-  margin-bottom: 0;
-}
-
-.navbar-item:hover {
-  background-color: #b62f36;
-  color: rgba(255, 255, 255) !important;
-}
-.nav-link:hover {
-  color: rgba(255, 255, 255) !important;
-}
-
-/* Carousel in landing section */
-.carousel-item {
-  height: 50vh;
-  min-height: 350px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.gallery {
-  padding: 80px, 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-.gallery img {
-  cursor: pointer;
-}
-
-#gallery-modal .modal-img {
-  width: 100%;
-}
-
-.gallery-border {
-  margin: 0;
-  padding: 2px;
-}
-
-.form-border {
-  border-style: outset;
-  border-color: #b62f36;
-  border-width: thick;
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-}
-
-#submitButton {
-  background-color: #b62f36 !important;
-  border: 0;
-}
-
-#submitButton:hover {
-  transform: scale(1.1);
-}
-
-.card {
-  background-image: url("images/bikes/form-background.jpeg");
-  background-position: center top;
-  opacity: 0.8;
-}
-
-input,
-textarea {
-  background-color: rgba(83, 86, 90, 0.5) !important;
-  color: white !important;
-}
-
-#button-styling {
-  text-align: center;
-  justify-content: center;
-  padding-top: 20px;
-}
-
-label {
-  color: white;
-  font-style: italic;
-}
-
-input:hover,
-textarea:hover {
-  background-color: rgba(193, 190, 181, 0.5) !important;
-  color: white !important;
-}
-
-textarea:focus,
-input:focus {
-  background-color: rgba(193, 190, 181, 0.5) !important;
-  border-color: #c12d34 !important;
-  outline: 0 !important;
-  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1) !important;
-}
-
-#contact-us {
-  color: white;
-}
-
-.gallery-item:hover {
-  filter: brightness(150%);
-}
-
-video:hover {
-  cursor: pointer;
 }
