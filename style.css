@@ -131,10 +131,13 @@ input:focus {
   filter: brightness(150%);
 }
 
-.card {
+.contact-card {
   background-image: url("images/bikes/form-background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center top;
   opacity: 0.8;
+  border: 0;
 }
 
 .gallery-border {
@@ -205,7 +208,10 @@ input:focus {
 }
 
 #submitButton:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  border-color: #c12d34 !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1) !important;
 }
 
 #brand-name {
