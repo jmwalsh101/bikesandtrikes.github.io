@@ -31,17 +31,11 @@ function validateform() {
   alert("Please enter valid data.");
   }
   //phone validation
-  if (phoneVal.length < 7 || nameVal.length > 11) {
+  if (phoneVal.length < 7 || phoneVal.length > 11) {
     // Error Code here
     alert("Please enter a valid mobile number.");
     //document.contactForm.name.focus();
     document.getElementById("phoneError").insertAdjacentHTML("afterend","<h7>Error:Your mobile must be at least 10digits long.</h7>");
-  }
-  //number validation
-  if (phoneVal.length < 9 || emailVal.length > 11) {
-    // Error Code here
-    alert("Please re-enter your Mobile number.");
-    document.getElementById("phoneError").insertAdjacentHTML("afterend","<h7>Error:Please reenter your email.</h7>");
   }
   //email validation
   if (emailVal.length < 11 || emailVal.length > 30 || !emailVal.includes("@")) {
@@ -56,6 +50,10 @@ function validateform() {
     alert("please enter valid message");
     document.getElementById("msgError").insertAdjacentHTML("afterend","<h7>Error:Please enter valid message.</h7>");
   }
+ 
+    alert (nameVal + "thank you we will be in contact shortly via"+  emailVal);
+  }
+  
 }
 
 // video pause/play
