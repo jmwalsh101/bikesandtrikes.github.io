@@ -11,7 +11,6 @@ document.addEventListener("click", function (e) {
 });
 
 // contact form
-
 function validateform() {
   var nameVal = document.getElementById("name").value;
   var phoneVal= document.getElementById("phone").value;
@@ -28,46 +27,36 @@ function validateform() {
   alert(messageVal);
   //if all inputs are empty
   if (nameVal == "" || phoneVal ==""|| emailVal == "" || messageVal == "") {
-    //Error Code here
-    alert("Please enter valid data.");
+  //Error Code here
+  alert("Please enter valid data.");
   }
+  //phone validation
   if (phoneVal.length < 7 || nameVal.length > 11) {
     // Error Code here
     alert("Please enter a valid mobile number.");
     //document.contactForm.name.focus();
-    document
-      .getElementById("phoneError")
-      .insertAdjacentHTML(
-        "afterend",
-        "<h7>Error:Your mobile must be at least 10digits long.</h7>"
-      );
+    document.getElementById("phoneError").insertAdjacentHTML("afterend","<h7>Error:Your mobile must be at least 10digits long.</h7>");
   }
+  //number validation
+  if (phoneVal.length < 9 || emailVal.length > 11) {
+    // Error Code here
+    alert("Please re-enter your Mobile number.");
+    document.getElementById("phoneError").insertAdjacentHTML("afterend","<h7>Error:Please reenter your email.</h7>");
+  }
+  //email validation
   if (emailVal.length < 11 || emailVal.length > 30 || !emailVal.includes("@")) {
     // Error Code here
     alert("Please re-enter your email.");
-    document
-      .getElementById("emailError")
-      .insertAdjacentHTML(
-        "afterend",
-        "<h7>Error:Please reenter your email.</h7>"
-      );
+    document.getElementById("emailError").insertAdjacentHTML("afterend","<h7>Error:Please reenter your email.</h7>");
   }
+  //message validation
   if (messageVal.length < 10 || messageVal.length > 150) {
     // Error Code here
     console.log();
     alert("please enter valid message");
-    document
-      .getElementById("msgError")
-      .insertAdjacentHTML(
-        "afterend",
-        "<h7>Error:Please enter valid message.</h7>"
-      );
+    document.getElementById("msgError").insertAdjacentHTML("afterend","<h7>Error:Please enter valid message.</h7>");
   }
 }
-
-// need to add to HTML
-// add to button: onclick=validateform()
-//html5 validation
 
 // video pause/play
 var v1Playing = true; //video 1
