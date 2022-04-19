@@ -42,7 +42,7 @@ function validateform() {
         "<h7>Error:Your mobile must be at least 10digits long.</h7>"
       );
   }
-  if (emailVal.length < 11 || emailVal.length > 30 || !address.contains("@")) {
+  if (emailVal.length < 11 || emailVal.length > 30 || !emailVal.includes("@")) {
     // Error Code here
     alert("Please re-enter your email.");
     document
