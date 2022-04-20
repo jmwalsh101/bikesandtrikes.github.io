@@ -34,6 +34,14 @@ h3 {
   font-style: italic;
 }
 
+
+.Response {
+  color: white;
+  font-size: 40px;
+  font-family: Georgia;
+  text-align: center;
+}
+
 footer {
   background-color: #b62f36;
   height: 80px;
