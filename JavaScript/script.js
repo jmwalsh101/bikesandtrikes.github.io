@@ -14,18 +14,17 @@ document.addEventListener("click", function (e) {
 
 function validateform() {
   var nameVal = document.getElementById("name").value;
-  var phoneVal= document.getElementById("phone").value;
+  var phoneVal = document.getElementById("phone").value;
   var emailVal = document.getElementById("emailAddress").value;
   var messageVal = document.getElementById("message").value;
   //contact array
-  var retainVals=[nameVal, phoneVal, emailVal, messageVal];
+  var retainVals = [nameVal, phoneVal, emailVal, messageVal];
   console.log(retainVals);
   //local storage of contact array
   localStorage.setItem("contactdata", retainVals);
- 
 
   //rev sound effect onclick
-	document.getElementById("rev").play();
+  document.getElementById("rev").play();
   //alert(messageVal);
   //if all inputs are empty
   if (nameVal == "") {
@@ -36,9 +35,8 @@ function validateform() {
       .insertAdjacentHTML(
         "afterend",
         "<h3>Error: Your name must be at least 2 characters long.</h3>"
-      );	
-  }
-  else if (phoneVal.length < 7 || phoneVal.length > 11) {
+      );
+  } else if (phoneVal.length < 7 || phoneVal.length > 11) {
     // Error Code here
     // alert("Please enter a valid mobile number.");
     document
@@ -47,8 +45,11 @@ function validateform() {
         "afterend",
         "<h3>Error: Your mobile must be at least 10 digits long.</h3>"
       );
-  }
-  else if (emailVal.length < 11 || emailVal.length > 30 || !emailVal.includes("@")) {
+  } else if (
+    emailVal.length < 11 ||
+    emailVal.length > 30 ||
+    !emailVal.includes("@")
+  ) {
     // Error Code here
     // alert("Please re-enter your email.");
     document
@@ -57,8 +58,7 @@ function validateform() {
         "afterend",
         "<h3>Error: Please re-enter your email.</h3>"
       );
-  }
-  else if (messageVal.length < 10 || messageVal.length > 150) {
+  } else if (messageVal.length < 10 || messageVal.length > 150) {
     // Error Code here
     // console.log();
     // alert("please enter valid message");
@@ -68,13 +68,12 @@ function validateform() {
         "afterend",
         "<h3>Error: Please enter valid message.</h3>"
       );
+  } else {
+    document.getElementById("OutputName").innerHTML = nameVal;
+    document.getElementById("OutputeMail").innerHTML = emailVal;
+    document.getElementById("displayForm").style.display = "none";
+    document.getElementById("second").style.display = "block";
   }
-  else{
-	document.getElementById("OutputName").innerHTML = nameVal;
-	document.getElementById("OutputeMail").innerHTML = emailVal;
-	document.getElementById("displayForm").style.display="none";
-	document.getElementById("second").style.display="block";
-  }	
 }
 
 // contact form
