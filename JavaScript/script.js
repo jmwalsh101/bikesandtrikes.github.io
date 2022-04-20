@@ -3,10 +3,10 @@ document.addEventListener("click", function (e) {
   if (e.target.classList.contains("gallery-item")) {
     const src = e.target.getAttribute("src");
     document.querySelector(".modal-img").src = src;
-    const myModal = new bootstrap.Modal(
+    const lightbox = new bootstrap.Modal(
       document.getElementById("gallery-modal")
     );
-    myModal.show();
+    lightbox.show();
   }
 });
 
@@ -34,7 +34,7 @@ function validateform() {
       .getElementById("name")
       .insertAdjacentHTML(
         "afterend",
-        "<h3>Error: Your name must be at least 2 characters long.</h3>"
+        "<p><span style='color: #fa4750; text-shadow: 0px 0px 2px #000000;'><strong>Error: Your name must be at least 2 characters long.</strong></span></p>"
       );
   } else if (phoneVal.length < 7 || phoneVal.length > 11) {
     // Error Code here
@@ -43,7 +43,7 @@ function validateform() {
       .getElementById("phoneError")
       .insertAdjacentHTML(
         "afterend",
-        "<h3>Error: Your mobile must be at least 10 digits long.</h3>"
+        "<p><span style='color: #fa4750; text-shadow: 0px 0px 2px #000000;'><strong>Error: Your mobile must be at least 10 digits long.</strong></span></p>"
       );
   } else if (
     emailVal.length < 11 ||
@@ -56,7 +56,7 @@ function validateform() {
       .getElementById("emailError")
       .insertAdjacentHTML(
         "afterend",
-        "<h3>Error: Please re-enter your email.</h3>"
+        "<p><span style='color: #fa4750; text-shadow: 0px 0px 2px #000000;'><strong>Error: Please re-enter your email.</strong></span></p>"
       );
   } else if (messageVal.length < 10 || messageVal.length > 150) {
     // Error Code here
@@ -66,7 +66,7 @@ function validateform() {
       .getElementById("msgError")
       .insertAdjacentHTML(
         "afterend",
-        "<h3>Error: Please enter valid message.</h3>"
+        "<p><span style='color: #fa4750; text-shadow: 0px 0px 2px #000000;'><strong>Error: Please enter valid message.</strong></span></p>"
       );
   } else {
     document.getElementById("OutputName").innerHTML = nameVal;
