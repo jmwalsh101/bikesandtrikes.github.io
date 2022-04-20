@@ -25,49 +25,49 @@ function validateform() {
  
 
   //rev sound effect onclick
- // document.getElementById("rev").play();
- // alert(messageVal);
+	document.getElementById("rev").play();
+  //alert(messageVal);
   //if all inputs are empty
   if (nameVal == "") {
     //Error Code here
-    alert("Please enter your name.");
+    //alert("Please enter your name.");
     document
       .getElementById("name")
       .insertAdjacentHTML(
         "afterend",
-        "<h7>Error:Your name must be at least 2 characters long.</h7>"
+        "<h3>Error: Your name must be at least 2 characters long.</h3>"
       );	
   }
   else if (phoneVal.length < 7 || nameVal.length > 11) {
     // Error Code here
-    alert("Please enter a valid mobile number.");
-  //  document.contactForm.name.focus();
+    // alert("Please enter a valid mobile number.");
+    // document.contactForm.name.focus();
     document
       .getElementById("phoneError")
       .insertAdjacentHTML(
         "afterend",
-        "<h7>Error:Your mobile must be at least 10 digits long.</h7>"
+        "<h3>Error: Your mobile must be at least 10 digits long.</h3>"
       );
   }
   else if (emailVal.length < 11 || emailVal.length > 30 || !emailVal.includes("@")) {
     // Error Code here
-    alert("Please re-enter your email.");
+    // alert("Please re-enter your email.");
     document
       .getElementById("emailError")
       .insertAdjacentHTML(
         "afterend",
-        "<h7>Error:Please reenter your email.</h7>"
+        "<h3>Error: Please re-enter your email.</h3>"
       );
   }
   else if (messageVal.length < 10 || messageVal.length > 150) {
     // Error Code here
-    console.log();
-    alert("please enter valid message");
+    // console.log();
+    // alert("please enter valid message");
     document
       .getElementById("msgError")
       .insertAdjacentHTML(
         "afterend",
-        "<h7>Error:Please enter valid message.</h7>"
+        "<h3>Error: Please enter valid message.</h3>"
       );
   }
   else{
