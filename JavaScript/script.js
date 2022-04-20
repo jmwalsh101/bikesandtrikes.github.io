@@ -41,7 +41,6 @@ function validateform() {
   else if (phoneVal.length < 7 || nameVal.length > 11) {
     // Error Code here
     // alert("Please enter a valid mobile number.");
-    // document.contactForm.name.focus();
     document
       .getElementById("phoneError")
       .insertAdjacentHTML(
