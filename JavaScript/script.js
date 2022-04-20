@@ -38,7 +38,7 @@ function validateform() {
         "<h3>Error: Your name must be at least 2 characters long.</h3>"
       );	
   }
-  else if (phoneVal.length < 7 || nameVal.length > 11) {
+  else if (phoneVal.length < 7 || phoneVal.length > 11) {
     // Error Code here
     // alert("Please enter a valid mobile number.");
     document
