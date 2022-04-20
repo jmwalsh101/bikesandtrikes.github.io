@@ -160,6 +160,7 @@
         <div class="video1">
           <video id="pause" autoplay muted loop onclick="pauseVideo1()">
             <source src="videos/hd-movie.mp4" type="video/mp4" />
+            <source src="videos/hd-movie.webm" type="video/webm" />
             Your browser does not support the video type.
             <span class=".tooltip">Click to pause or to play</span>
           </video>
@@ -178,7 +179,8 @@
             onclick="pauseVideo2()"
           >
             <source src="videos/commute.mp4" type="video/mp4" />
-            Your browser does not support the video type.
+            <source src="videos/commute.webm" type="video/webm" Your browser
+            does not support the video type.
           </video>
         </div>
         <div id="third-p-order-1">
@@ -495,6 +497,8 @@
                       </button>
                       <audio id="rev">
                         <source src="sounds/rev.mp4" type="audio/mp4" />
+                        <source src="sounds/rev.mp3" type="audio/mp3" />
+                        <!-- No notification of absence of sound required. User will not notice. -->
                       </audio>
                     </div>
                     <!-- End of contact form -->
