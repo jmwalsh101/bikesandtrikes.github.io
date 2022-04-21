@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Bikes and Trikes</title>
+    <!-- Bootstrap JS -->
     <link
       defer
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -9,25 +10,31 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap CSS -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Custom JavaScript -->
     <script defer src="JavaScript/script.js"></script>
+    <!-- Browser tab image -->
     <link defer rel="icon" type="image/x-icon" href="images/favicon.ico" />
   </head>
+
   <body>
-    <!-- Navigation bar-->
+    <!-- NAV BAR-->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-custom"
       id="mainNav"
     >
       <div class="container px-4">
         <div class="navbar-brand">
-          <img src="images/logo.webp" width="80" /><span id="brand-name"
+          <img src="images/logo.webp" width="80" alt="Our logo" /><span
+            id="brand-name"
             >Bikes and Trikes</span
           >
         </div>
@@ -58,8 +65,8 @@
       </div>
     </nav>
 
-    <!-- Landing section with carousel -->
-    <header>
+    <!-- CAROUSEL -->
+    <section>
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -120,90 +127,93 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </header>
+    </section>
 
-    <!-- About us -->
-    <div id="about-us"></div>
-    <h1 class="section-header">About Us</h1>
-    <div class="container">
-      <p>
-        We’re motorcycle enthusiasts who like nothing more than the smell of
-        burnt rubber on road. We’ve peddled the best café racers and the worst
-        trikes imaginable, so we know how to get you in the right saddle for you
-        to ride your ride. Founded in 2022, we know the latest models to the
-        classics. Whether you're looking for a sturdy beast to get you to
-        Timbuktu and back or a smart little piece to cut down on the morning
-        commute, we've got it all. No matter what, we'll make sure you'll have
-        something that gets the blood pulsing and keeps you safe. The freedom of
-        the road is yours to take.
-      </p>
-      <div class="descriptions" id="second-paragraph">
-        <div>
-          <h3>Get Out and See the World</h3>
-          <p>
-            If you're looking to hit out on the open road and find where it'll
-            take you, trust us to set you up with something right. All you'll
-            need is the petrol to keep the bike going and the will to keep on
-            pressing into the world. Feel the wind in your face and keep your
-            eyes on the road without ever needing to worry about the bike. It'll
-            take you wherever you want to go and will leave fears of the unknown
-            many miles behind.
-          </p>
-          <p>
-            Experience new cultures. See a different side of life. Feel what it
-            means to live in this world...
-          </p>
-          <p>
-            Get your ride from <span id="brand-name-p">Bikes and Trikes</span>
-          </p>
+    <!-- ABOUT US -->
+    <section>
+      <div id="about-us"></div>
+      <h1 class="section-header">About Us</h1>
+      <div class="container">
+        <p>
+          We're motorcycle enthusiasts who like nothing more than the smell of
+          burnt rubber on road. We've peddled the best café racers and the worst
+          trikes imaginable, so we know how to get you in the right saddle for
+          you to ride your ride. Founded in 2022, we know the latest models to
+          the classics. Whether you're looking for a sturdy beast to get you to
+          Timbuktu and back or a smart little piece to cut down on the morning
+          commute, we've got it all. No matter what, we'll make sure you'll have
+          something that gets the blood pulsing and keeps you safe. The freedom
+          of the road is yours to take.
+        </p>
+        <!-- Flexbox container -->
+        <div class="descriptions" id="second-paragraph">
+          <div>
+            <h3>Get Out and See the World</h3>
+            <p>
+              If you're looking to hit out on the open road and find where it'll
+              take you, trust us to set you up with something right. All you'll
+              need is the petrol to keep the bike going and the will to keep on
+              pressing into the world. Feel the wind in your face and keep your
+              eyes on the road without ever needing to worry about the bike.
+              It'll take you wherever you want to go and will leave fears of the
+              unknown many miles behind.
+            </p>
+            <p>
+              Experience new cultures. See a different side of life. Feel what
+              it means to live in this world...
+            </p>
+            <p>
+              Get your ride from <span id="brand-name-p">Bikes and Trikes</span>
+            </p>
+          </div>
+          <div class="video1">
+            <video id="pause" autoplay muted loop onclick="pauseVideo1()">
+              <source src="videos/hd-movie.mp4" type="video/mp4" />
+              <source src="videos/hd-movie.webm" type="video/webm" />
+              Your browser does not support the video type.
+            </video>
+          </div>
         </div>
-        <div class="video1">
-          <video id="pause" autoplay muted loop onclick="pauseVideo1()">
-            <source src="videos/hd-movie.mp4" type="video/mp4" />
-            <source src="videos/hd-movie.webm" type="video/webm" />
-            Your browser does not support the video type.
-            <span class=".tooltip">Click to pause or to play</span>
-          </video>
+        <!-- Second Flexbox Container-->
+        <div class="descriptions" id="third-paragraph">
+          <div class="video2">
+            <video
+              id="third-p-order-2"
+              autoplay
+              muted
+              loop
+              onclick="pauseVideo2()"
+            >
+              <source src="videos/commute.mp4" type="video/mp4" />
+              <source src="videos/commute.webm" type="video/webm" />
+              Your browser does not support the video type.
+            </video>
+          </div>
+          <!-- Div for flexbox column order change -->
+          <div id="third-p-order-1">
+            <h3>Travel in Style</h3>
+            <p>
+              If you're riding local, hit the road with one of our urban bikes.
+              It'll take you to heaven and back - and to work too, if you can
+              even think of stopping. You'll dodge between the traffic, make the
+              green lights, and wow passers-by.
+            </p>
+            <p>
+              You'll see your city like you've never seen it before. Close to
+              the road. Close to the people. And closer to streets and avenues
+              that you never went down before...
+            </p>
+            <p>
+              Make the most of where you live with
+              <span id="brand-name-p">Bikes and Trikes</span>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="descriptions" id="third-paragraph">
-        <div class="video2">
-          <video
-            id="third-p-order-2"
-            id="pause"
-            width="auto"
-            height="300"
-            autoplay
-            muted
-            loop
-            onclick="pauseVideo2()"
-          >
-            <source src="videos/commute.mp4" type="video/mp4" />
-            <source src="videos/commute.webm" type="video/webm" Your browser
-            does not support the video type.
-          </video>
-        </div>
-        <div id="third-p-order-1">
-          <h3>Travel in Style</h3>
-          <p>
-            If you're riding local, hit the road with one of our urban bikes.
-            It'll take you to heaven and back - and to work too, if you can even
-            think of stopping. You'll dodge between the traffic, make the green
-            lights, and wow passers-by.
-          </p>
-          <p>
-            You'll see your city like you've never seen it before. Close to the
-            road. Close to the people. And closer to streets and avenues that
-            you never went down before...
-          </p>
-          <p>
-            Make the most of where you live with
-            <span id="brand-name-p">Bikes and Trikes</span>
-          </p>
-        </div>
-      </div>
+    </section>
 
-      <!-- Page Content -->
+    <!-- GALLERY -->
+    <section>
       <div id="gallery"></div>
       <h1 class="section-header">Gallery</h1>
       <div class="container">
@@ -213,16 +223,18 @@
           out with anything you need and then some - there's only so much we can
           show!
         </p>
-        <section class="gallery">
+        <div class="gallery">
           <div class="container-xs container-sm container-md container-lg">
             <div
               class="row row-cols-1 row-cols-sm-2 row-cols-md-3"
               id="gallery-outline"
             >
               <div class="gallery-border">
+                <!-- Thumbnails -->
                 <img
                   class="gallery-item"
                   src="images/bikes/gallery1.webp"
+                  alt="Harley Davidson in Versailles"
                   loading="lazy"
                 />
               </div>
@@ -230,6 +242,7 @@
                 <img
                   class="gallery-item"
                   src="images/bikes/gallery2.webp"
+                  alt="Two bikes in Switzerland"
                   loading="lazy"
                 />
               </div>
@@ -237,6 +250,7 @@
                 <img
                   class="gallery-item"
                   src="images/bikes/gallery3.webp"
+                  alt="Old British Triumph"
                   loading="lazy"
                 />
               </div>
@@ -244,6 +258,7 @@
                 <img
                   class="gallery-item"
                   src="images/bikes/gallery4.webp"
+                  alt="New British triumph"
                   loading="lazy"
                 />
               </div>
@@ -251,6 +266,7 @@
                 <img
                   class="gallery-item"
                   src="images/bikes/gallery5.webp"
+                  alt="BMW bike in New York"
                   loading="lazy"
                 />
               </div>
@@ -258,6 +274,7 @@
                 <img
                   class="gallery-item"
                   src="images/bikes/gallery6.webp"
+                  alt="Man resting on bike in forest"
                   loading="lazy"
                 />
               </div>
@@ -265,6 +282,7 @@
                 <img
                   class="gallery-item"
                   src="images/bikes/gallery7.webp"
+                  alt="Biker driving at speed in urban environment"
                   loading="lazy"
                 />
               </div>
@@ -272,6 +290,7 @@
                 <img
                   class="gallery-item"
                   src="images/bikes/gallery8.webp"
+                  alt="Enfield bike in Scottish highlands"
                   loading="lazy"
                 />
               </div>
@@ -280,48 +299,56 @@
                   <img
                     class="gallery-item"
                     src="images/bikes/gallery9.webp"
+                    alt="Honda bike in forest"
                     loading="lazy"
                   />
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
 
-        <!-- Modal -->
+    <!-- Hidden lightbox div -->
+    <section>
+      <div
+        class="modal fade"
+        id="gallery-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div
-          class="modal fade"
-          id="gallery-modal"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
+          class="modal-dialog modal-dialogue-centered modal-lg"
+          role="document"
         >
-          <div
-            class="modal-dialog modal-dialogue-centered modal-lg"
-            role="document"
-          >
-            <div class="modal-content">
-              <div class="modal-body">
-                <img
-                  src="images/bikes/christopher-burns-Pl0s3qM0A_w-unsplash.webp"
-                  class="modal-img"
-                  alt="modal image"
-                  loading="lazy"
-                />
-              </div>
+          <div class="modal-content">
+            <div class="modal-body">
+              <img src="" class="modal-img" alt="modal image" loading="lazy" />
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Bootstrap 5 Contact Form Snippet -->
-        <div id="contact"></div>
-        <h1 class="section-header">Contact Us</h1>
+    <!-- CONTACT US  -->
+    <section>
+      <div id="contact"></div>
+      <h1 class="section-header">Contact Us</h1>
+      <div class="container">
+        <!-- Flexbox container -->
         <div id="contact-us-container">
+          <!-- Store front image -->
           <div class="contact-us-box" id="contact-store">
-            <img src="images/bikes/storefront.webp" loading="lazy" />
+            <img
+              src="images/bikes/storefront.webp"
+              alt="Our store front"
+              loading="lazy"
+            />
           </div>
-
+          <!-- Contact text -->
           <div class="contact-us-box" id="contact-text">
             <p>
               Don't be afraid to drop in and say "hi"! We're a friendly bunch of
@@ -346,6 +373,7 @@
               <span id="brand-name-p">Bikes and Trikes</span>
             </p>
           </div>
+          <!-- Google Map -->
           <div class="gmap-canvas contact-us-box" id="contact-map">
             <iframe
               id="gmap-canvas"
@@ -356,6 +384,7 @@
             ></iframe>
             <br />
             <br />
+            <!-- Contact details -->
             <p class="contact-details">
               <span class="contact-label">Address:</span> 2301 Mainstreet, New
               Jersey
@@ -370,6 +399,7 @@
           </div>
         </div>
 
+        <!-- Start of contact form -->
         <div class="container px-5 my-5">
           <div class="row justify-content-center">
             <div class="col-lg-8 form-border">
@@ -383,15 +413,6 @@
                         back to you ASAP.
                       </p>
                     </div>
-                    <!-- * * * * * * * * * * * * * *
-			  // * * SB Forms Contact Form * *
-			  // * * * * * * * * * * * * * * *
-			  // This form is pre-integrated with SB Forms.
-			  // To make this form functional, sign up at
-			  // https://startbootstrap.com/solution/contact-forms
-			  // to get an API token!
-			  -->
-
                     <form id="contactForm" method="post">
                       <!-- Name Input -->
                       <div class="form-floating mb-3">
@@ -429,7 +450,6 @@
                           Please enter valid Mobile Number.
                         </div>
                       </div>
-
                       <!-- Email Input -->
                       <div class="form-floating mb-3">
                         <input
@@ -440,7 +460,6 @@
                           data-sb-validations="required,email"
                         />
                         <label for="emailAddress">Email Address</label>
-
                         <div
                           id="emailError"
                           class="invalid-feedback"
@@ -449,7 +468,6 @@
                           Email Address Email is not valid.
                         </div>
                       </div>
-
                       <!-- Message Input -->
                       <div class="form-floating mb-3">
                         <textarea
@@ -467,25 +485,8 @@
                           data-sb-feedback="message:required"
                         ></div>
                       </div>
-
-                      <!-- Submit message -->
-                      <!--<div class="d-none" id="submitMessage">
-						  <div class="text-center text-danger mb-3">
-						   <span id="name"></span>, Thank you for your details, we will be in contact via <span id="emailAddress"></span> shortly!
-						  </div>
-						</div>-->
                     </form>
                     <!-- Submit button -->
-                    <!-- <div class="d-grid">
-					  <button
-						class="btn btn-primary btn-lg"
-						id="submitButton"
-						type="submit"
-					  >
-						Submit
-					  </button>
-					</div>-->
-
                     <div id="button-styling">
                       <button
                         class="btn-primary btn-lg"
@@ -502,6 +503,8 @@
                       </audio>
                     </div>
                     <!-- End of contact form -->
+
+                    <!--Hidden div for confirm submission -->
                   </div>
                   <div id="second" class="CentreDIV">
                     <h2 id="contact-us">Message Received!</h2>
@@ -523,7 +526,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <footer>
       <br />
       <p class="footer">A project for Web Design and Client Side Scripting.</p>

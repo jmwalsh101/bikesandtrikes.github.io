@@ -1,3 +1,4 @@
+/* Custom Font for Bikes and Trikes */
 @font-face {
   font-family: "Chemvre Personal Use Only";
   font-style: normal;
@@ -189,8 +190,6 @@ input:focus {
   justify-content: center;
   padding-top: 10%;
   padding-bottom: 10%;
-  font-weight: 900;
-  text-shadow: 10px 10px 20px #000000;
 }
 
 /* IDs */
