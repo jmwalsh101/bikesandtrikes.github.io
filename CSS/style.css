@@ -140,7 +140,7 @@ input:focus {
 }
 
 .contact-card {
-  background-image: url("images/bikes/form-background.webp");
+  background-image: url("../images/bikes/form-background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
